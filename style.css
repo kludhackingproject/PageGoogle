@@ -1,27 +1,27 @@
 html{
   height: 100%;
-  width: 100%;
+  margin: 0;
 }
 
-body, .nav, .footer, .section, .container-footer, .container-button, .container-footer-left, .container-footer-right{
+.nav, .footer, .section, .container-footer, .container-button, .container-footer-left, .container-footer-right{
   display: flex;
 }
 
 body{
   height: 100%;
   width: 100%;
-  align-content: space-between;
-  flex-direction: column;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nav{
   height: 20px;
   justify-content: flex-end;
-  padding: 10px 10px 10px 0;
+  padding: 20px 30px 10px 0;
 }
 
 .section{
-  height: 100%;
+  height: calc(100% - (50px + 108px));
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -29,9 +29,7 @@ body{
 
 .footer{
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 81.5px;
+  justify-content: space-around;
   background-color: #F2F2F2;
   color: #717180;
   width: 100%;
@@ -47,14 +45,6 @@ body{
   padding-left: 15px;
 }
 
-.section input{
-  margin: 20px 0px 20px 0px;
-  width: 40%;
-  height: 40px;
-  border-radius: 40px;
-  border: 1px solid #E2E2E2;
-}
-
 button{
   background-color: #F2F2F2;
   color: #717180;
@@ -64,8 +54,21 @@ button{
   margin-left: 15px;
 }
 
+button:hover{
+  color: black;
+}
+
 button span{
   padding: auto;
+}
+
+.section input{
+  margin: 20px 0px 20px 0px;
+  width: 40%;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #E2E2E2;
+  text-indent: 20px;
 }
 
 .section input:hover{
@@ -75,4 +78,54 @@ button span{
   border-radius: 40px;
   box-shadow: 0px 0px 5px grey;
   border: 0.1px white;
+}
+
+.container-footer, .France{
+  border-top: 1px solid #E2E2E2;
+  padding: 15px 0px 15px 0px;
+}
+
+.element_footer{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-footer-left{
+  padding-left: 15px;
+}
+
+.container-footer-right{
+  padding-right: 15px;
+}
+
+.France{
+  padding-left: 30px;
+}
+
+a{
+  color:  #717180;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.nav a{
+  color: black;
+}
+
+.nav .profile a:hover{
+  text-decoration: none;
+}
+
+.profile a{
+  display: block;
+    background-color: #5283B1;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: -10px;
+    border-radius: 20px;
 }
